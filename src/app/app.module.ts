@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PickingListGeneratorComponent } from './picking-list-generator/picking-list-generator.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PickingListGeneratorComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<input #items_list type="text" name="item" id="item" list="item_list" (keydown)="changeFocus($event, quantity)"/>
+<input #quantity type="number" name="quantity" id="quantity" (keydown)="changeFocus($event, quantity_type)" />
+<select #quantity_type name="quantity_type" id="quantity_type" (keydown)="changeFocus($event, add_button)">
+  <option value="kg">kg</option>
+  <option value="NOS">NOS</option>
+  <option value="Bag">Bag</option>
+</select>
+<input #add_button type="button" value="Add" (click)="addData($event, items_list)"/>
+
+<!-- data list for the items input list  -->
+<datalist id="item_list">
+  <option value="carrot"></option>
+  <option value="cabbage"></option>
+  <option value="cauliflower"></option>
+  <option value="onion"></option>
+  <option value="potato"></option>
+  <option value="Mint"></option>
+</datalist>
