@@ -16,6 +16,5 @@ export class PickingListGeneratorComponent {
     this.changeFocus(new KeyboardEvent("keydown", {key: 'Enter'}), nextInput)
     console.log("add button pressed");
   }
-  //sample
 
 }
